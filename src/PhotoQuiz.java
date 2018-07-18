@@ -1,14 +1,8 @@
-/*
- *    Copyright (c) The League of Amazing Programmers 2013-2017
- *    Level 1
- */
-
 import java.awt.Component;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionListener;
 import java.net.MalformedURLException;
 import java.net.URL;
-
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
@@ -16,13 +10,11 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 public class PhotoQuiz {
-
 	public static void main(String[] args) throws Exception {
 		JFrame quizWindow = new JFrame();
 		quizWindow.setVisible(true);
 		quizWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // This will make sure the program exits when you
 																	// close the window
-
 		// 1. find an image on the internet, and put its URL in a String variable (from
 		// your browser, right click on the image, and select â€œCopy Image Addressâ€�)
 		String imageUrl = "https://www.bing.com/th?id=OIP.DRDBZtl7gqTwJUgBFY91mAHaE8&w=250&h=167&c=7&o=5&pid=1.7";
@@ -47,7 +39,6 @@ public class PhotoQuiz {
 		// 9. remove the component from the quiz window (you may not see the effect of
 		// this until step 12)
 		quizWindow.remove(image);
-
 		// 10. find another image and create it (might take more than one line of code)
 		imageUrl = "https://img.buzzfeed.com/buzzfeed-static/static/enhanced/webdr03/2013/7/25/5/enhanced-buzz-17903-1374744218-23.jpg";
 		Component image2 = createImage(imageUrl);
