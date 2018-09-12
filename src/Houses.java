@@ -73,5 +73,4 @@ public class Houses {
 		robot.move(50);
 		robot.turn(90);
 	}
-
 }
